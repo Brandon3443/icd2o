@@ -1,0 +1,2 @@
+is_python_fun = False
+print("do i think pyhton is fun" + str(is_python_fun) + " i find errors very annoying")

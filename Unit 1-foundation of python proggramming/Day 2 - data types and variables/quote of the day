@@ -1,0 +1,4 @@
+quote = "run the 500"
+author = " -Alex Lee"
+
+print(str(quote) + str(author) )

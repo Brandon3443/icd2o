@@ -1,0 +1,6 @@
+print("Question: what is 4+7")
+print("A) 35")
+print("B) 11")
+print("C) 28")
+print("D) 265327645246752364523674527435276454327654273645275")
+print("Correct answer B")

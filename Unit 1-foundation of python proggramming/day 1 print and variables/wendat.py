@@ -1,0 +1,8 @@
+print("presentation huron-wendat herritage minute")
+print("aspect of huron wendat nation")
+print("traditional practice")
+print("art and craftmanship")
+print("language and story telling")
+print("camunity and traditions")
+print("wednesday november 15, 4500")
+print("duraation 60 seconds")
