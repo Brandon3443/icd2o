@@ -53,6 +53,7 @@ print(f"{name4 :>4} {mpoints4 :>14} {opoints4 :>17} {box4 :>30}")
 print(f"{name5 :>5} {mpoints5 :>13} {opoints5 :>17} {box5 :>16}")
 print("")
 box6 = 80/98 * 100
+print("summary") 
 print("Your toatal points:80")
 print("opponant toatal points:98")
 print(f"your toatal box percentage:{box6}")
