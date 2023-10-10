@@ -10,15 +10,15 @@ round1 = int(input("Input your round one points here: "))
 round2 = int(input("Input your round two points here: "))
 round3 = int(input("Input your round three points here: "))
 round4 = int(input("Input your round four points here: "))
-
 round5 = int(input("Input your round five points here: "))
+
 opp1 = int(input("Input opponents round one points here: "))
 opp2 = int(input("Input opponents round two points here: "))
 opp3 = int(input("Input opponents round three points here: "))
 opp4 = int(input("Input opponents round four points here: "))
 opp5 = int(input("Input opponents round five points here: "))
 
-your_total = int(input("Enter total here: "))
+your_total = int(input("Enter your total here: "))
 opponents_total = int(input("Enter opponents total here: "))
 tbp = your_total / 178 * 100
 
@@ -63,6 +63,8 @@ print(f"Opponents Name: {opponents_name4}")
 print(f"Your points: {round4}  ")
 print(f"Opponents Points: {opp4}  ")
 print(f"Who won game 4: {name} ")
+
+print(" ")
 
 print("Game #5:")
 print(f"opponants name: {opponents_name5}")
