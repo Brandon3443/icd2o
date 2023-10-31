@@ -1,7 +1,9 @@
+import math
+
 def calculate_circle_area(radius):
   print(f"the are of the circle is {radius}")
 radius2 = float(input("enter the radius: "))
-radius = (3.14*radius2)**2
+radius = (math.pi*radius2)**2
 calculate_circle_area(radius)
 
 def calculate_rectangle_area(length, width):
@@ -12,10 +14,10 @@ area=length*width
 calculate_rectangle_area(length, width)
 
 def calculate_cylinder_volume(radius3, height):
-    print(f"the volume of the cylinder is: {volume}")
+  print(f"the volume of the cylinder is: {volume}")
 radius3 = int(input("Please enter radius here: "))
 height = int(input("Please enter height here: "))
-volume = ((3.14*radius3)**2)*height
+volume = ((math.pi*radius3)**2)*height
 calculate_cylinder_volume(radius3, height)
 
 def greet_person(greeting):
@@ -38,8 +40,3 @@ product_name = str(input(" What item did you buy "))
 quantity = int(input("how many did you buy "))
 price = float(input("what was the total price "))
 format_sales(product_name, price, quantity)
-
-
-
-
-
