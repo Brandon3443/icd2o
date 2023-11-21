@@ -15,10 +15,9 @@ def choose_superhero():
     return choice, name, heroes[choice]
 
 initial_health = random.randint(50, 100)
-print(f"Starting health: {initial_health}")
 
 choice, name, superhero = choose_superhero()
-print(f"Welcome, {name}! You have chosen {superhero}.")
+print(f"Welcome, {name}! You have chosen {superhero}. Your starting health is: {initial_health}.")
 print("The world is in danger, and your mission is to save it!")
 
 def make_decision():
@@ -26,7 +25,7 @@ def make_decision():
     while choice not in ['1', '2']:
         print("A supervillain is causing trouble.")
         print("1. Confront the villain")
-        print("2. Seek assistance from another hero")
+        print("2. your scared and runaway with a 50% chance of getting sniped by Ishowspeed")
         choice = input("What do you want to do? Enter 1 or 2: ")
         if choice not in ['1', '2']:
             print("Invalid choice! Try again.")
@@ -35,9 +34,9 @@ def make_decision():
 def superhero_mission(action, player_superhero):
     if action == "1":
         print(f"You, as {player_superhero},be brave and confront the supervillain!")
-        damage_taken = (75, 100)
+        damage_taken = (50, 90)
     elif action == "2":
-        print(f"{player_superhero} runaway. with a chance of being sniped to the head.")
+        print(f"{player_superhero} ranaway.") 
         damage_taken = 0 or 1000
     else:
         print("Invalid choice! Try again. You better listen to instructions!!!!!!!!!")
@@ -54,11 +53,12 @@ decision = make_decision()
 damage_taken = superhero_mission(decision, superhero)
 
 remaining_health = initial_health - damage_taken
+
 if remaining_health <= 0:
-    print("Your superhero's health has dropped below 0. Game over!")
+    print("Your superhero's health has dropped below 0. Take the L.")
 else:
     print(f"Remaining health: {remaining_health}")
     bonus = award_bonus_points(True)
     final_score = remaining_health + bonus
     print(f"Your final score: {final_score}")
-    print("YOU WON! #1 Victory Royal")
+    print("YOU WON! #1 Victory Royale")
