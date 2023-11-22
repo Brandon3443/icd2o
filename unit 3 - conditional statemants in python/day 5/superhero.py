@@ -28,10 +28,10 @@ def make_decision():
 def superhero_mission(action):
     if action == "1":
         print("You, as a superhero, be brave and confront the supervillain!")
-        damage_taken = 75
+        damage_taken = random.randint(0,100)
     elif action == "2":
         print("You ran away.")
-        damage_taken = 100
+        damage_taken = 1000
     else:
         print("Invalid choice! Try again.")
         damage_taken = 0
