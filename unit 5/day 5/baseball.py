@@ -50,13 +50,26 @@ def stat_leader(category):
         print(f"the player withe most RBIs is {names[maxIndex]} with {rbis[maxIndex]}")
 
 # Function to display the top 10 players in a specified category
-def display_top_10_in_category(names, data, category):
+def display_top_10_in_category(names, hits, runs, rbis, category):
+    categories = {
+        "Hits": hits,
+        "Runs": runs,
+        "RBIs": rbis}
+    if category not in categories:
+        print("Invalid category. Please choose from Hits, Runs, or RBIs.")
+        return
+    data = categories[category]
     sorted_indices = sorted(range(len(data)), key=lambda i: data[i], reverse=True)
     print(f"Top 10 Players in {category}:")
     for i in range(min(10, len(data))):
-        print(f"{i + 1}. {names[i]}: {data[sorted_indices[i]]}")
-
-# Function to allow users to add a new baseball player with their statistics
+        print(f"{i + 1}. {names[sorted_indices[i]]}: {data[sorted_indices[i]]}")
+player_names = ["Cheryl Townsend", "Christina Leon", "Cassandra Ward PhD", ...]  # Replace with the actual names
+hits_data = [260, 35, 329, ...]  # Replace with the actual Hits data
+runs_data = [64, 118, 56, ...]  # Replace with the actual Runs data
+rbis_data = [72, 18, 11, ...]  # Replace with the actual RBIs data
+display_top_10_in_category(player_names, hits_data, runs_data, rbis_data, "Hits")
+display_top_10_in_category(player_names, hits_data, runs_data, rbis_data, "Runs")
+display_top_10_in_category(player_names, hits_data, runs_data, rbis_data, "RBIs")
 def add_new_player(names, hits, runs, rbis):
     name = str(input("Enter the player's name: "))
     hit = int(input("Enter the number of hits: "))
